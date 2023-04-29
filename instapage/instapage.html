@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding Instagram features</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../subpagestyle.css">
+    <link rel="stylesheet" type="text/javascript" href="../scriptz.js">
+
+    <style>
+        .inspo, .complaints, .feedbacks{
+            width: 70vw;
+        }
+        .wireframe{
+            width: 40vw;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        }
+
+    </style>
+    
+
+</head>
+<body>
+    <img src="banner.png" class="banner">
+
+    <a href="javascript:history.back()"><img src="../backbtn.png" id="backbtn"></a>
+    <img src="../topbtn.png" id="topbtn" onclick="topFunction()">
+
+    <script>
+        let backbutton = document.getElementById("backbtn");
+        let topbutton = document.getElementById("topbtn");
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            backbutton.style.display = "block";
+            topbutton.style.display = "block";
+        } else {
+            backbutton.style.display = "none";
+            topbutton.style.display = "none";
+        }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+
+    <section>
+        <h2 class="thetitle">Background</h2>
+        <p>Let's be honest... you probably have Instagram (yes you, the one reading this). But you're probably not as addicted to it as I am (I hope so at least). How can I not be, since I get to see memes, news, and my friends all in the same app? It's like a super app.</p>
+        <p>However, the issue with a super app is like the saying "Jack of all trades, master of none". Since Instagram is packed with features, I feel that they can't really focus on one specific feature on the app. You also have to consider the fact that Instagram have tried to introduce new features (for example IGTV) after researching, and yet the concept never worked and it was taken off the app.</p>
+        <p>Therefore, as a really avid user of Instagram and as a UI UX designer and researcher, I feel the need to add some features in Instagram that might be useful to me and others. My research question is:</p>
+        <p><b>What features would be nice to have in Instagram that will enhance user experience?</b></p>
+    </section>
+
+    <section>
+        <h2 class="thetitle">User Complaints</h2>
+            <p>To know what I should add, I need to first know the complaints Instagram users have. I asked a few Gen Z and Millennials on this matter (the age group that uses Instagram the most), and here are some of their answers.</p>
+            <img src="complaints.png" class="complaints">
+            <p>I got some feedbacks from users, from old features and complaints. However, I cannot add some features like seeing friends activities (<a href="https://www.buzzfeednews.com/article/katienotopoulos/instagrams-following-activity-tab-is-going-away" target="_blank">Following Activity</a>) in the &#10084; tab because Instagram purposelly removed that feature years ago (it's basically a stalking feature).</p>    
+    </section>
+
+    <section>
+        <h2 class="thetitle">Finding Inspirations</h2>
+            <p>After knowing what the users' complaints are, I started to look for inspirations from other popular apps, since a lot of Instagram's features are inspired by many apps. Because these apps are used by a lot of users, adding features from their apps may increase users' familiarity.</p>
+            <p>Here are some of the examples:</p>
+            <img src="inspo.png" class="inspo">
+    </section>
+
+    <section>
+        <h2 class="thetitle">Persona</h2>
+        <p>I created a persona to represent the majority of Instagram users in 2023. This is so that I have a realistic representations of your Instagram's audience segments for reference. </p>
+        <img src="persona.png" class="persona">
+    </section>
+
+    <section>
+        <h2 class="thetitle">User Stories</h2>
+        <p>I then summed up the features that Instagram should add/fix from a user's perspective so that I can make sense and realise the users' wants. These user stories are created based on the persona and other prior research above. </p>
+        <img src="userstories.png" class="userstories">
+    </section>
+    
+    <section>
+        <h2 class="thetitle">Wireframe</h2>
+        <p style="margin-bottom: 2vw;">After knowing the features to add, I then drew some sketches on how the features are going to look like in Instagram's real app. This is so I can visualise the layout and flow of the prototype that I will create.</p>
+        <img src="wireframe1.JPG" class="wireframe">
+        <img src="wireframe2.JPG" class="wireframe">
+        <img src="wireframe3.JPG" class="wireframe">
+
+    </section>
+
+    <section>
+        <h2 class="thetitle">Prototype</h2>
+        <p>After designing the low-fidelity prototype of Instagram through wireframing, I created the prototype to showcase and realise my added features. This is my last iteration of the design. </p>
+        <iframe style="border: 1px solid #f0f0f0;" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FYTnwZINak3ht9dpmng1gub%2FAdding-Instagram-Features%3Fnode-id%3D3-150%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D3%253A150" allowfullscreen></iframe>
+    </section>
+
+    <section>
+        <h2 class="thetitle">User Testing & Feedback</h2>
+        <p>I asked 10 Millennials and Gen Zs to try out my prototype in Figma, asking them to do the features listed in my user stories, observe the error rate and completion rate, etc. I conducted this test using the Think Aloud Interview method, where the testers use my prototype while saying their thoughts out loud about the app I made. </p>
+        <p>In summary, the testers stated that the placement of the features looks seamless, and they realised the importance of the features I added. </p>
+        <img src="feedbacks.png" class="feedbacks">
+    </section>
+
+    <section>
+        <h2 class="thetitle">Conclusion</h2>
+        <p>As we can see from above, the impacts to the users are as such:</p>
+        <img src="../bluestar.png" class="bluestar"><p class="pointers">Users can now search for filters easily instead of having to scroll through all their filters (very useful for narcissists)</p>
+        <br>
+        <img src="../bluestar.png" class="bluestar"><p class="pointers">Users can now announce / alert important messages in their DM.</p>
+        <br>
+        <img src="../bluestar.png" class="bluestar"><p class="pointers">Users can sort through the links they've sent to each other & voice recordings.</p>
+        <br>
+        <img src="../bluestar.png" class="bluestar"><p class="pointers">Users can now look for popular categories in the &#x1F50D; tab.</p>
+        <br>
+        <img src="../bluestar.png" class="bluestar"><p class="pointers">Users can finally save Reels just like they do for normal Instagram posts.</p>
+        <br>
+        <img src="../bluestar.png" class="bluestar"><p class="pointers">Users can now rediscover the items they saw in case they forgot to save or like the item in Instagram Shop.</p>
+        <br>
+        <img src="../bluestar.png" class="bluestar"><p class="pointers">When you go to Profile, click the Hamburger Icon, and click Archive, users can sort through their Instagram Stories by music choice or people tagged (not just date or location).</p>
+        <br>
+        <img src="../bluestar.png" class="bluestar"><p class="pointers">Speaking of archiving, users can now also archive their chat instead of just deleting their chat with someone.</p>
+        <br>
+
+        <p style="margin-top: 2vw;">In conclusion, I added a lot of features that I concluded a lot of Instagram users would use in their daily lives. I answered the users' complaints and feedbacks and successfully realised it by researching and designing for them, and got positive feedbacks. Safe to say, I have answered my research question. </p>
+    </section>
+
+
+</body>
+</html>

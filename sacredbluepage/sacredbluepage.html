@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sacred Blue Cooking App</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../subpagestyle.css">
+    <link rel="stylesheet" type="text/javascript" href="../scriptz.js">
+
+    <style>
+        .socialmediaobv, .companal{
+            width: 80vw;
+        }
+        .persona, .piecharts, .wireframe{
+            width: 70vw;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .userstories{
+            width: 70vw;
+        }
+
+    </style>
+    
+</head>
+<body>
+
+    <img src="banner.png" class="banner">
+
+    <a href="javascript:history.back()"><img src="../backbtn.png" id="backbtn"></a>
+    <img src="../topbtn.png" id="topbtn" onclick="topFunction()">
+
+    <script>
+        let backbutton = document.getElementById("backbtn");
+        let topbutton = document.getElementById("topbtn");
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            backbutton.style.display = "block";
+            topbutton.style.display = "block";
+        } else {
+            backbutton.style.display = "none";
+            topbutton.style.display = "none";
+        }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <section>
+        <h2 class="thetitle">Background</h2>
+        <p>I have always liked cooking and cuisine all around the world since a young age.
+            Growing up in Indonesia, I’ve been privileged to try some of the world’s arguably
+            best foods. My mom used to say that if you cannot travel abroad, eat their food; the
+            taste of their food will take you to their country in the comfort of your own house.
+            This passion and principle have helped me shape the way I am today; how I am
+            going out of my comfort zone and trying something new and foreign (so here I am in
+            the Netherlands).</p>
+        <p>Like most students abroad, I need to learn how to cook. The problem is, because I can cook basically whatever I want, I sometimes got overwhelmed by the dishes I can make. Therefore, as an IT student, I want to find a way to help people like me to cook and know food properly, while introducing cuisine from all around the world. The best way to realize that is to design a cook/food mobile app, as basically everyone has a smartphone.</p>
+        <p>Oh and, because I am a proud Gen Z, I want to design an app that appeals to us sarcastic and snarky human beings.</p>
+        <p>Therefore, my research question would be:</p>
+        <p><b>How do I design cooking/food app catered to help my target audience discover food?</b></p>
+    </section>
+
+    <section>
+        <h2 class="thetitle">Target Audience</h2>
+            <p style="margin-bottom: 4vw;">I need to first research on my target
+            audience/demographics to know who I should market my product to. I concluded
+            that the people I’m focusing on is not only Gen Z but also Millennials, aged
+            11-26 and 27-42 respectively. Here are a few reasons why:</p>
+            <img src="../bluestar.png" class="bluestar"><p class="pointers">When scrolling through popular social media apps like TikTok and Twitter, I found that Gen Z and Millennials
+                tend to be way more relaxed and playful than the other generations. The advertising and content big companies produce today are really different than the typical ads they use in the old days. Just look at some of these examples:</p>
+                <img src="socialmediaobv.png" class="socialmediaobv">
+                <p style="margin-bottom: 5vw;">What can I conclude from all these? I concluded that Gen Z and Millennials would be more interested in my app if I include sarcastic and snarky comments.</p>
+            
+                <img src="../bluestar.png" class="bluestar"><p class="pointers">As my app are catered to Gen Z and Millenials, I need to design the app to look and feel like other apps these people use. I researched two apps that my target audience uses frequently, which are Duolingo and Snapchat.</p>
+                <img src="similarapps.png" class="similarapps" style="width: 70vw;">
+                <p>You will notice that these apps have distinct colours and theme, but also have clean design. It gives off the vibe that these apps are not so serious and more playful.</p>
+            </section>
+
+    <section>
+        <h2 class="thetitle">Interview</h2>
+        <p>After doing secondary research on my target audience, I now need to do primary research by directly interviewing Gen Z and Millennials.</p>
+        <p>Here are the list of questions I asked to my target audience. </p>
+        <img src="../bluestar.png" class="bluestar"><p class="pointers">Do you have a hard time finding foods catered to you?</p>
+        <br>
+        <img src="../bluestar.png" class="bluestar"><p class="pointers">Do you use your phone to browse for recipes or just use your own imagination?</p>
+        <br>
+        <img src="../bluestar.png" class="bluestar"><p class="pointers">Do you want to discover foods that you’ve never heard of before?</p>
+        <br>
+        <img src="../bluestar.png" class="bluestar"><p class="pointers">Do you want to know how to make popular & trending foods on the internet properly?</p>
+    
+        <p style="margin-top: 2vw; margin-bottom: 2vw;">After interviewing them, I drew pie charts to illustrate my findings.</p>
+        <img src="piecharts.JPG" class="piecharts">
+        <p style="margin-top: 2vw;">In conclusion, the response I got postively affirmed that this project has potential, and that my target audience would love my idea.</p>
+    </section>
+
+    <section>
+        <h2 class="thetitle">Competitive Analysis</h2>
+        <p>Even though the concept app I'm going for doesn't have a direct competitor, it does share a few similarities with some apps like Albert Heijn and HelloFresh.</p>
+        <img src="companal.png" class="companal">
+        <p>Albert Heijn is the largest supermarket chain in the Netherlands with a market share of 34.8% in 2020. Their app sells groceries there. But to make them more appealing, they also have a cook section in their app that has recipes using the ingredients they sell. They usually update their recipes based on trends (like Kings Day in the Netherlands).</p>
+        <p>Another company I analysed is Hello Fresh, a meal kit company that sends ingredients and the according recipe to your house for you to cook them yourself. They are the largest meal-kit provider in the United States, and also has operations in Australia, Canada, New Zealand and Europe.</p>
+        <p>The reason why I chose to analyse these two apps is because they are widely used by everyone including my target audience. They also cater ingredients and recipes to their user.</p>
+        <p>However, Albert Heijn can't really cater to your needs if you have specific diets. Also, they tend to substitute original ingredients with the ingredients they sell (you're supposed to use Pecorino for Carbonara, but they tell users to use Parmesan instead because they don't sell Pecorino).</p>
+        <p>In the case of Hello Fresh, while they do have preferences you can set to
+            personalise your foods, they don’t exclusively have gluten- or allergen-free meal
+            options. Also, your preferences can only go so far, as there are only preferences like
+            “mostly meat, veggie, family, quick cook, calorie smart, and pescatarian”. They don’t
+            have really specific diets like keto, halal if you’re Muslim, etc.</p>
+        <p>In conclusion, I find a <b>niche</b> that none of the big competitors have, as my app is
+            dedicated to finding recipes that you’d like, trending recipes from sources like
+            YouTube(rs), TikTok, famous people, etc, and a world map that lets you freely search
+            for recipes based on a country. I also found that there’s not really a super app like mine in
+            the App store, which is great because I have little to no competition, but because this
+            is a really new thing, this might not work in the existing market.</p>
+    </section>
+
+    <section>
+        <h2 class="thetitle">Persona</h2>
+        <p style="margin-bottom: 2vw;">After knowing the stereotypical people who would love to use my app, I made two personas, one for a student, and one for a fresh graduate who just started working.</p>
+        <img src="persona1.png" class="persona" style="margin-bottom: 5vw;">
+        <img src="persona2.png" class="persona">
+    </section>
+
+    <section>
+        <h2 class="thetitle">User Stories</h2>
+        <p>I created user stories based on the persona, interview, and other research I conducted above. Here are some of the user stories:</p>
+        <img src="userstories.png" class="userstories">
+    </section>
+
+    <section>
+        <h2 class="thetitle">Wireframe</h2>
+        <p>I decided to draw some low fidelity prototype / sketches to help illustrate what the app is going to look like. Only the layouts, no fancy decorations. I made the flow and layout according to the feedback I got from my colleagues, as well as the apps I researched before.</p>
+        <img src="wireframe1.jpg" class="wireframe" style="margin-bottom: 3vw;">
+        <img src="wireframe2.jpg" class="wireframe">
+    </section>
+
+    <section>
+        <h2 class="thetitle">Prototype</h2>
+        <p>Using my wireframes, I realized my low fidelity designs into a high fidelity prototype using Figma. This is the final version of the food app I created, <b>Sacred Blue</b>.</p>
+        <p>The reason why I chose the name Sacred Blue is because the name comes from the French phrase <i>sacre bleu!</i>,
+             an expression as a cry of surprise; basically the French version of Oh My
+            Word!, which is sort of the vibe I’m looking for (not too serious and humorous). I
+            picked this French phrase because France is closely related to the world of culinary & cooking as well.</p>
+        <iframe style="border: 1px solid #f0f0f0;" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F0QT5Ueg6ghyqlx7H6QrK6r%2FSacred-Blue-Food-App%3Fnode-id%3D2-50%26starting-point-node-id%3D2%253A50" allowfullscreen></iframe>
+        <p style="margin-top: 3vw;">As a side note, I also included the initialisation / account creation in the prototype, to demonstrate that the app really caters to the user.</p>
+    </section>
+
+    <section>
+        <h2 class="thetitle">Usability Testing</h2>
+        <p>To get feedback and opinions from my target audience, I decided to conduct a usability testing. I conducted a total of 5 usability testing, asking the users to do the tasks I listed in my user stories. Here are the summary of the results:</p>
+        <img src="../bluestar.png" class="bluestar"><p class="pointers">100% completion rate, users said they had no trouble adjusting & familiarising themselves with the app. </p>
+        <br>
+        <img src="../bluestar.png" class="bluestar"><p class="pointers">Gen Z and Millennials love my humour and sarcasm in the app</p>
+        <br>
+        <img src="../bluestar.png" class="bluestar"><p class="pointers">However, some people wants to know the exact nutritional values of the recipes.</p>
+        <br>
+        <img src="../bluestar.png" class="bluestar"><p class="pointers">They all said that they would use this app in their day to day life, as it's entertaining but also helpful to them.</p>
+
+    </section>
+
+    <section>
+        <h2 class="thetitle">Conclusion</h2>
+        <p>With the creation of my app, there are a few impacts to the user:</p>
+        <img src="../bluestar.png" class="bluestar"><p class="pointers">They can now discover foods that they don't know existed before from all around the world.</p>
+        <br>
+        <img src="../bluestar.png" class="bluestar"><p class="pointers">They can search recipes using arbitrary keywords, like words describing the weather, their mood, etc.</p>
+        <br>
+        <img src="../bluestar.png" class="bluestar"><p class="pointers">They can organise their recipes and plan their meals better thanks to the cookbook app.</p>
+        <br>
+        <img src="../bluestar.png" class="bluestar"><p class="pointers">They can now discover trending foods that people are raving about on the internet</p>
+        <br>
+        <p>In conclusion, I can say that in this project, I have answered my research question. My target audience really loves the app I created that really catered to them, and they can discover more foods better.</p>
+    </section>
+
+    
+</body>
+</html>

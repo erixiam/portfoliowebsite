@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revamping FlyGaruda</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../subpagestyle.css">
+    <link rel="stylesheet" type="text/javascript" href="../scriptz.js">
+
+    <style>
+        
+
+.appreviews{
+width: 70vw;
+margin-top: 2vw;
+}
+
+.interviewresults{
+width: 50vw;
+margin-bottom: 2vw;
+}
+
+.flightapps{
+width: 70vw;
+margin-bottom: 3vw;
+margin-top: 2vw;
+}
+
+.threepoints{
+width: 65vw;
+margin-top: 1vw;
+}
+
+.flowchartimg{
+width: 70vw;
+margin-top: 3vw;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.wireframeimg{
+width: 60vw;
+margin-top: 3vw;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+
+
+.feedbacksimg{
+width: 50vw;
+}
+
+.observationimg{
+    width: 80vw;
+    margin-top: 3vw;
+}
+
+.ratings{
+    width: 50vw;
+    margin-top: 2vw;
+    margin-bottom: 3vw;
+}
+
+.emiratesrating, .sqrating{
+    width: 35vw;
+    display: inline;
+    margin-bottom: 5vw;
+    margin-top: 2vw;
+}
+
+
+
+    </style>
+
+</head>
+<body>
+
+    <img src="banner.png" class="banner">
+
+    <a href="javascript:history.back()"><img src="../backbtn.png" id="backbtn"></a>
+    <img src="../topbtn.png" id="topbtn" onclick="topFunction()">
+
+    <script>
+        let backbutton = document.getElementById("backbtn");
+        let topbutton = document.getElementById("topbtn");
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            backbutton.style.display = "block";
+            topbutton.style.display = "block";
+        } else {
+            backbutton.style.display = "none";
+            topbutton.style.display = "none";
+        }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <section>
+        <h2 class="thetitle">Background</h2>
+
+        <p>Garuda Indonesia is Indonesia’s flag carrier airline. It is a member of SkyTeam, the second-largest airline of Indonesia after Lion Air, and the only Indonesian airline that flies to Europe.</p>
+        <p>You can book their flights either by contacting their customer service, going to their website, and through their application. </p>
+        <p>As an Indonesian myself, I frequently travel from the Netherlands to Indonesia by Garuda Indonesia, and I want to book my flights easily from my phone, so therefore I frequently use their app.</p>
+        <p>However, there are lots of issues I encountered from within the app, from database issues to the design of the app. So as a UI UX designer, my research question would be:        </p>
+        <p style="margin-top: 2vw;"><b>How do I improve FlyGaruda so that the design and usability would be better for travelers flying with Garuda Indonesia?  </b></p>
+    </section>
+
+    <!-- empathize line -->
+
+    <section>
+        <h2 class="thetitle">App reviews</h2>
+        <p>Upon downloading FlyGaruda, I noticed something off. They have a surprisingly lower rating compared to other flight apps. This is the overall app score in Apple's App store.</p>
+        <img src="ratings.png" class="ratings">
+        <p>I wanted to investigate the complaints and reasons why a lot of people gave the app a one star rating. Here are some of the things users say:</p>
+        <img src="appreviews.png" class="appreviews">
+        <p style="margin-top: 3vw;">As you can see, many users experience errors. This is very unfortunate, as Garuda Indonesia is Indonesia’s flagship airline, yet their app is very poor.</p>
+        <p>To confirm these issues users are facing, I shall do a interview to see if these issues still exist.</p>
+    </section>
+
+    <section>
+        <h2 class="thetitle">Interview</h2>
+        <p>I then decided to interview some Indonesians who frequently fly with Garuda Indonesia to download FlyGaruda to confirm these issues, and they said yes.</p>
+        <p>I also asked their opinion on how the app looks like (because I am a UI UX designer) and like I expected, the feedback I got are bad.</p>
+        <img src="interviewresults.png" class="interviewresults">
+        <br>
+
+        <p style="margin-bottom: 1vw;">So, a few things I conclude from the testers and reviews:</p>
+        <img src="../bluestar.png" class="bluestar"><p class="pointers">They don’t have a problem with the functionalities of the app.</p>
+        <br>
+        <img src="../bluestar.png" class="bluestar"><p class="pointers">They do have a problem with how the app keeps crashing and not loading information.</p>
+        <br>
+        <img src="../bluestar.png" class="bluestar"><p class="pointers">They all think the app looks very poor and outdated, design wise.</p>
+        <p style="margin-top: 2vw;">As a UI UX designer and researcher, I cannot solve the second issue, as it's not within this project's scope. However, I can fix the third issue.</p>
+    
+    </section>
+
+    <section>
+        <h2 class="thetitle">Personal Observation</h2>
+        <p>I first need to understand FlyGaruda from the eyes of a Garuda Indonesia user and UI UX designer. Here are some flaws I saw.</p>
+        <img src="observationimg.png" class="observationimg">
+    </section>
+
+    <section>
+        <h2 class="thetitle">Competitive Analysis</h2>
+        <p>After writing some key points from FlyGaruda, I decided to look at other flight applications, like Emirates and Singapore Airlines. Why? Because these airlines are the flag carriers of their respective countries, and they are some of the world's best rated airlines (Garuda is also a world class airline, but not as high). Here are their reviews on the App Store.</p>
+        <img src="emiratesrating.png" class="emiratesrating" style="margin-right: 2vw;"><img src="sqrating.png" class="sqrating">
+            <p>I tried using their apps on a day to day basis, try to book flights, see my membership, et cetera.</p>
+        <img src="flightapps.png" class="flightapps">
+        <p></p>
+        <p style="text-align: center;">Here are my main key points of these apps:</p>
+        <img src="threepoints.png" class="threepoints">
+    </section>
+
+    <section>
+        <h2 class="thetitle">Persona</h2>
+        <p>I made a persona based on my research to get a grasp of what sort of user might use the FlyGaruda app and will know what design changes I will make.</p>
+        <img src="personaimg.png" class="persona">
+        <p>TLDR: most passengers using Garuda takes domestic, business trip flights aimed to middle to high income travelers, and/or employees that have their flights reimbursed by their company.</p>
+    </section>
+
+    <section>
+        <h2 class="thetitle">Flowchart</h2>
+        <p>After knowing the features and designs to improve for the users, I created a flowchart to list all the steps that the user must take to complete a task. This is to ensure that the flow of my app is sensible and well-designed.</p>
+        <img src="flowchartimg.png" class="flowchartimg">
+    </section>
+
+    <section class="wireframe">
+        <h2 class="thetitle">Wireframe</h2>
+        <p>After knowing the flow of my app, I made a wireframe (low-fidelity prototype) to demonstrate the interface elements that will exist on the pages/tabs of my app. This is to help you and I get an image of what the app will look like, minus the extra decor; just the essentials.</p>
+        <img src="wireframeimg.JPG" class="wireframeimg">
+    </section>
+
+    <section>
+        <h2 class="thetitle">Prototype</h2>
+        <p>Using my wireframes, I realized my low fidelity designs into a high fidelity prototype using Figma. After countless iterations, this is my final proposed design of the new FlyGaruda app.</p>
+        <iframe style="border: 1px solid #f0f0f0;" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F1RoNTH5ANxyqfOmw5gDABH%2FFly-Garuda-Prototype%3Fnode-id%3D16-35%26starting-point-node-id%3D12%253A115" allowfullscreen></iframe>
+    </section>
+
+    <!-- <section class="expertfeedbacks">
+        <h2 class="thetitle">Expert Feedbacks</h2>
+        <p>I asked some teachers to assess my prototype. Here are the things I asked:</p>
+        <img src="../bluestar.png" class="bluestar"><p class="pointers">The user interface & design of the app</p>
+        <br>
+        <img src="../bluestar.png" class="bluestar"><p class="pointers">How familiar is the app to them</p>
+        <br>
+        <img src="../bluestar.png" class="bluestar"><p class="pointers">Some general questions and suggestions</p>
+
+        <br><br>
+
+        <p>In summary, here are some criticisms I received:</p>
+        <img src="../bluestar.png" class="bluestar"><p class="pointers">Make sure the icons in the tabs has the same theme/from the same icon pack</p>
+        <br>
+        <img src="../bluestar.png" class="bluestar"><p class="pointers">Don't remove all features from the real app (for example, their online shop tab)</p>
+    </section> -->
+
+    <section>
+        <h2 class="thetitle">User Feedbacks</h2>
+        <p>I asked 8 users to use and test my app and compare it to the original FlyGaruda app. This is very important, as I am designing it to these people who would hopefully approve and use this new design.</p>
+        <p>To sum it up, I got positive feedbacks. They stated that my design looks way cleaner and better, and feels more familiar with other flight apps the users also use.</p>
+        <img src="feedbacksimg.png" class="feedbacksimg">
+    </section>
+
+    <section>
+        <h2 class="thetitle">Conclusion</h2>
+        <p style="margin-bottom: 1vw;">There are some impacts to the user because of the prototype I created:</p>
+        <img src="../bluestar.png" class="bluestar"><p class="pointers">The app looks more professional, affirming confidence to flyers on Garuda Indonesia's reputation and image.</p>
+        <br>
+        <img src="../bluestar.png" class="bluestar"><p class="pointers">They can navigate through the app faster, because the layout of the app is more familiar to them than before (one big example is the new, less-cluttered More page)</p>
+        <br>
+        <img src="../bluestar.png" class="bluestar"><p class="pointers">Flyers can easily discover other cabin classes & facilities they will get when flying with Garuda Indonesia thanks to the new Home screen. This is beneficial for flyers, as they are now informed about Garuda's offerings.</p>
+        <br>
+        <img src="../bluestar.png" class="bluestar"><p class="pointers">In the book page, flyers have the option to book multiple city flights instead of just one way or two way flights, increasing efficiency.</p>
+
+        <p style="margin-top: 2vw; margin-bottom: 1vw;">However, there are also impact(s) to Garuda Indonesia.</p>
+        <img src="../bluestar.png" class="bluestar"><p class="pointers">For Garuda Indonesia, this redesign is also beneficial. As flyers now know more about Garuda's facilities, they are now more inclined to upgrade classes or purchase extra luxuries (like purchasing special meals), potentially generating more revenue.</p>
+        <br>
+        
+        <p style="margin-top: 2vw;">In conclusion, based on the research, prototyping, and the feedbacks I received, I would say that I have answered my research question. Not only is the design of the app looks better, but so does the usability and familiarity of the app. I am glad that the feedbacks I received were positive.</p>
+        
+    </section>
+
+</body>
+</html>

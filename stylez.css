@@ -1,0 +1,250 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #0016dd;
+
+    font-family: 'Open Sans', sans-serif;
+
+
+
+}
+
+
+/* -------------------intro-------------------- */
+
+
+
+.intro{
+    height: 100vh;
+}
+
+.intro, .mypicdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.introtexts{
+    margin-left: 5vw;
+    margin-right: 40vw;
+    color: white;
+    margin-top: 5vw;
+    margin-bottom: 10vw;
+
+}
+
+#introh1{
+    font-weight: 300;
+    font-size: 10vw;
+    margin-bottom: 0px;
+
+}
+
+.introp{
+    font-size: 2vw;
+    margin-bottom: 1vw;
+    font-weight: 300;
+}
+
+.introp2{
+    font-size: 1.3vw;
+    font-weight: 100;
+}
+
+/* -------------------about me-------------------- */
+
+.aboutme{
+    /* background-color: #bedcf7; */
+    background-color: #f0f0f0;
+    padding: 2.5vw 5vw 0vw 5vw;
+    
+}
+
+.mydesigns{
+    background-color: #f0f0f0;
+    padding: 2.5vw 7.5vw 2.5vw 7.5vw;
+}
+
+.aboutme{
+    margin: 6vw;
+    box-shadow: 1.25vw 1.25vw black;
+    
+    border-style: solid;
+    border-width: 0.5vw;
+    border-color: #f0f0f0;
+}
+
+
+.bodyh1, .bodyh1too, .footerh1{
+    font-weight: bold;
+    font-size: 5vw;
+    color: white;
+    margin-bottom: 2vw;
+}
+
+.bodyh1{
+    color: #0016dd;
+
+}
+
+.bodyh1too{
+    text-align: center;
+    margin-bottom: 6vw;
+    margin-top: 5vw;
+}
+
+.bodyp{
+    color: black;
+    font-weight: 500;
+    font-size: 1.5vw;
+}
+
+h2{
+    color: white;
+    font-size: 3vw;
+    font-weight: 500;
+}
+
+.myselfh2{
+    margin-bottom: 1vw;
+    font-weight: 500;
+}
+
+
+.blackh2{
+    color: black;
+    font-weight: 400;
+    margin-bottom: 7vw;
+    font-size: 2vw;
+}
+
+.too{
+    margin-bottom: 1vw;
+    margin-top: 5vw;
+}
+
+
+
+
+/* -------------------myself-------------------- */
+
+.myself{
+    padding: 5vw 10vw 5vw 10vw;
+}
+
+.ptoo{
+    color: white;
+}
+
+.mypic{
+    width: 18vw;
+}
+
+
+/* -------------------myself pics-------------------- */
+
+.brainimg, .booksimg, .globeimg{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-right: 3vw;
+  padding-top: 1vw;
+}
+
+
+.brainimg{
+    width: 18vw;
+}
+
+.booksimg{
+    width: 20vw;
+}
+
+.globeimg{
+    width: 17vw;
+}
+
+.row{
+    margin-bottom: 5vw;
+}
+
+.garudafleet, .someonecooking, .usinginstagram{
+    width: 30vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.designsimgcontainer{
+    left: 2.5vw;
+}
+
+.imgcontainer{
+    justify-content: flex-end;
+    display: flex;
+}
+
+.designstext{
+    border-bottom: 0.25vw solid black;
+    position: relative;
+    right: 2.5vw;
+}
+
+.bluearrow{
+    width: 5vw;
+    position:absolute;
+    bottom: 2vw;
+    right: 2vw;
+}
+
+.designsheader{
+    color: black;
+    margin: 1.5vw 0vw 3vw 0vw;
+}
+
+.designsrow{
+    margin-bottom: 10vw;
+}
+
+/* --------------footer-------------- */
+
+.footertexts{
+    margin: 2vw;
+    padding: 3vw;
+    border: 0.2vw solid white;
+    background-color: transparent;
+}
+
+.footerh1{
+    text-align: center;
+    font-size: 3vw;
+    margin-bottom: 2vw;
+}
+
+.hitmeupbtn{
+    width: 20vw;
+    justify-content: center;
+    margin: 0 auto;
+
+    box-shadow: 0.75vw 0.75vw black;
+
+
+    border-style: solid;
+    border-width: 0.25vw;
+    border-color: white;
+}
+
+.hitmeup{
+    text-align: center;
+    background-color: white;
+    padding: 2vw;
+    margin: 0;
+    color: #0016dd;
+    font-weight: 700;
+
+}
+
+a:hover{
+    text-decoration: none;
+
+}
