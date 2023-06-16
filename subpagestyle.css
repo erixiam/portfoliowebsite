@@ -17,9 +17,11 @@ body{
 
 }
 
-.banner{
+.banner, .methodline{
     width: 100%;
 }
+
+
 
 
 img, iframe{
@@ -57,13 +59,17 @@ p{
     font-size: 1.5vw;
 }
 
-.bluestar{
+.bluestar,.happyface, .sadface{
     width: 2vw;
     margin-left: 2vw;
     margin-bottom: 1vw;
     display: inline;
     
     }
+
+.happyface, .sadface{
+    width: 3vw;
+}
     
 .pointers{
 margin-left: 1vw;

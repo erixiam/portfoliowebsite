@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>International week project</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../subpagestyle.css">
+    <link rel="stylesheet" type="text/javascript" href="../scriptz.js">
+
+    <style>
+
+.personaimg{
+    width: 70vw;
+}
+
+
+
+    </style>
+
+</head>
+<body>
+
+    <img src="banner.png" class="banner">
+
+    <a href="javascript:history.back()"><img src="../backbtn.png" id="backbtn"></a>
+    <img src="../topbtn.png" id="topbtn" onclick="topFunction()">
+
+    <script>
+        let backbutton = document.getElementById("backbtn");
+        let topbutton = document.getElementById("topbtn");
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            backbutton.style.display = "block";
+            topbutton.style.display = "block";
+        } else {
+            backbutton.style.display = "none";
+            topbutton.style.display = "none";
+        }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <section>
+        <h2 class="thetitle">Background</h2>
+        <p>As this is an international week project, we were tasked by Woonbedrijf (our stakeholder) to design an interactive tool for Vestide, a part of Woonbedrijf that stimulates students to share their ideas about what the core values mean for them if they would be a part of the LOT community.</p>
+        <p>We were tasked to answer the research question already given by the international week, which is:</p>
+        <p style="margin-top: 2vw;"><b>“In what way can new technologies contribute to reaching Sustainable Development Goals (SDG’s)?”</b></p>
+    </section>
+
+    <img src="../empathiseline.png" class="methodline">
+
+
+    <section id="interviews">
+        <h2 class="thetitle">Interviews</h2>
+        <p>This is the most direct way to get students to tell us on being a part of a community and how they'd want to share their core values. Here are the results.</p>
+        <img src="../bluestar.png" class="bluestar"><p class="pointers">Students expressed that they would like to express their ideas for the core values using their phones, with apps / websites.</p>
+        <br>
+        <img src="../bluestar.png" class="bluestar"><p class="pointers">Students favoured displaying their values on the form of visualisation rather than text-based.</p>
+        <br>
+        <img src="../bluestar.png" class="bluestar"><p class="pointers">Students stated that to feel like they're in a community, they need to be in a physical space where they meet people, in a relaxed enivronment.</p>
+        <br>
+    </section>
+
+    <section id="trendanalysis">
+        <h2 class="thetitle">Trend analysis</h2>
+        <p>After knowing what the students feel and want, we dive into new technologies (part of the main question).</p>
+        <p>After countless research, we found that AI is the most suitable for this project, since it's widely known and more simple, realistic, and feasible to use and maintain than other tech trends. Also, since the students said visual, we decided to go with AI image generators.</p>
+        <p>We concluded that the best AI Image generator is Midjourney, since they produce the most realistic photo, and has the ability for custom ratios and other flexibilites. This is validated through the interview where students say they want a visual representation of their ideas/inputs.</p>
+        <img src="imggen.png" style="width: 50vw;">
+        <p></p>
+    </section>
+
+    <img src="../defineline.png" class="methodline">
+
+
+    <section id="persona">
+        <h2 class="thetitle">Persona</h2>
+        <p>To represent the different user types (students) that might use our design, we created 2 personas, one is a local Dutch student, and the other is an international student.</p>
+        <img src="localstudpersona.png" style="margin-bottom: 3vw;" class="personaimg">
+        <img src="intlstudpersona.png" class="personaimg">
+    </section>
+
+    <section id="userstories">
+        <h2 class="thetitle">User stories</h2>
+        <p>Now that we know the sort of person who we should design for, it's time to list the features of the design of our app & website, and how we show the design in real life. This is primarily based on the interview results.</p>
+        <img src="userstories.png" style="width: 70vw;">
+    </section>
+
+    <img src="../prototypeline.png" class="methodline">
+
+    <section id="wireframesandprototypes">
+        <h2 class="thetitle">Wireframes and prototypes</h2>
+        <p>It was stated before that the students need to be in a physical space where they meet people, in a relaxed enivronment. We concluded that a cafe is the best environment for the students to hang. </p>
+        <img src="cafeimg.png" style="width: 45vw;">
+        <p>As you can see, these aren't normal cafe tables. They are touchscreen/tablet embedded tables that students can interact with. This is the wireframe of the touchscreen tables.</p>
+        <img src="tablewireframe.png" style="width: 45vw;">
+        <p>We chose this diamond design because we were inspired by diamond/checkered pattern in tablecloth & will attract people's attention. The content that will be generated are student's core values and other students can vote which core values are most important for them.</p>
+        <p>In case students are not on the cafe, they can still vote for core values and see artwork from their phones and desktop. This is validated by preference of using phones and websites. </p>
+        <iframe style="border: 1px solid #f0f0f0; width: 40vw;" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F6chtoGgsJyb6cMoJSjIiR5%2FUI%252FUX-International-week-screens%3Ftype%3Ddesign%26node-id%3D244-1483%26scaling%3Dmin-zoom%26page-id%3D244%253A691%26starting-point-node-id%3D244%253A1570" allowfullscreen></iframe>    
+        <p>This is the final prototype of the tablet embedded tables. I recommend opening it in Figma to get the full experience.</p>
+        <iframe style="border: 1px solid #f0f0f0; width: 50vw;" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F6chtoGgsJyb6cMoJSjIiR5%2FUI%252FUX-International-week-screens%3Ftype%3Ddesign%26node-id%3D244-721%26scaling%3Dmin-zoom%26page-id%3D244%253A690%26starting-point-node-id%3D244%253A748" allowfullscreen></iframe>
+    </section>
+
+    <section id="video">
+        <h2 class="thetitle">Video pitching</h2>
+        <p>To get the full details of our idea and designs, we made a video explaining the whole concept and how it works. Check it out :)</p>
+        <iframe style="width: 71vw;" src="https://www.youtube.com/embed/v38ONz16zbI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    
+    </section>
+
+    <section id="expertfeedback">
+        <h2 class="thetitle">Expert feedback</h2>
+        <p>We showed the video above to our stakeholders Woonbedrijf. Here are their feedbacks on the project.</p>
+        <p>“I like the idea of having a space where people can hang out; I think that the concept of embedding tablets into a table in a communal area is very feasible yet creative.” – Sam, Group M</p>
+        <p>“You should do more research on giving incentives to users to share their thoughts using your design. While giving them monetary items may be nice to some people, it may not be a good enough motivation for others. But overall, I’d say that's a good idea, considering you came up with these in 5 days!” – Sam, Group M</p>
+    </section>
+
+    <section>
+        <h2 class="thetitle">Conclusion</h2>
+        <p>We concluded that by using AI image generators to visualise students' idea on core values & uploading their thoughts by their phone or website, with a voting system that students can participate by phone and tablet-embedded tables on a cafe to form a community, we can <b>use new technologies contribute to reaching SDGs, specifically goal number 11: Sustainable cities and communities</b>. With that, we have answered our research question. Thank you for reading! </p>
+    </section>
+
+
+</body>
+</html>

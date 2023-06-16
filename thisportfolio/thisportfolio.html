@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Making of this portfolio</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../subpagestyle.css">
+    <link rel="stylesheet" type="text/javascript" href="../scriptz.js">
+
+    <style>
+        
+
+.website{
+    width: 75vw;
+}
+
+
+
+    </style>
+
+</head>
+<body>
+
+    <img src="banner.png" class="banner">
+
+    <a href="javascript:history.back()"><img src="../backbtn.png" id="backbtn"></a>
+    <img src="../topbtn.png" id="topbtn" onclick="topFunction()">
+
+    <script>
+        let backbutton = document.getElementById("backbtn");
+        let topbutton = document.getElementById("topbtn");
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            backbutton.style.display = "block";
+            topbutton.style.display = "block";
+        } else {
+            backbutton.style.display = "none";
+            topbutton.style.display = "none";
+        }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <section>
+        <h2 class="thetitle">Background</h2>
+
+        <p>A portfolio website is designed to showcase the work, skills and experiences of someone or a company (in this context, it would be me). It serves as a visual representation of my abilities, expertise and creativity that people can see through the internet.</p>
+        <p>I need a portfolio website to that can show off my skills, projects, and myself, while looking professional yet unique that will hopefully be accepted by company recruiters and my assessors. So my research question is:</p>
+        <p style="margin-top: 2vw;"><b>“How do I create a personal website that I personally liked to effectively showcase my work, skills, and myself while also having a seamless and engaging user experience?”</b></p>
+    </section>
+
+    <img src="../empathiseline.png" class="methodline">
+
+
+    <section id="literaturestudy">
+        <h2 class="thetitle">Literature Study</h2>
+        <p>I first need to find contextual information, guidance and best practices. This time I will specifically be researching design principles.</p>
+        <p>Based on Interaction Design Foundation, I found that these principles are related and crucial in context of creating this portfolio website.</p>
+        <img src="../bluestar.png" class="bluestar"><p class="pointers">Set information in a logical, natural order.</p>
+        <br>
+        <img src="../bluestar.png" class="bluestar"><p class="pointers">Ensure users can easily undo/redo actions.        </p>
+        <br>
+        <img src="../bluestar.png" class="bluestar"><p class="pointers">Maintain consistent standards so users know what to do next without learning new toolsets.        </p>
+        <br>
+        <img src="../bluestar.png" class="bluestar"><p class="pointers">Don’t make users remember information – keep options, etc., visible.        </p>
+        <br>
+        <img src="../bluestar.png" class="bluestar"><p class="pointers">Design with aesthetics and minimalism in mind – don’t clutter with unnecessary items.</p>
+        <br>
+
+        <p>When designing my wireframe, prototype, and eventually code it to make this website, I will keep these principles in mind.</p>
+    </section>
+
+    <section id="benchmarkcreation">
+        <h2 class="thetitle">Benchmark Creation / Competitive analysis</h2>
+        <p>I also need to analyse other portfolio websites that is well designed taken from reliable sites like Dribbble and Awwwards.</p>
+        <img src="brunowebsite.png" class="website" style="margin-bottom: 5vw;">
+        <img src="mallardwebsite.png" class="website">
+        <P style="margin-top: 3vw;">I will take the pros of both websites and incorporate them to my website.</P>
+    </section>
+
+    <section id="trendanalysis">
+        <h2 class="thetitle">Trend analysis</h2>
+        <p>To make my website modern and have a more immersive experience, I need to research on design trends.</p>
+        <p>Here are the top trends I concluded were helpful to building this website.</p>
+        <img src="designtrends.png" style="width: 75vw; margin-top: 3vw;">
+    </section>
+
+    <img src="../defineline.png" class="methodline">
+
+
+    <section id="moodboard">
+        <h2 class="thetitle">Moodboard</h2>
+        <p>Now that I know the laws I need to follow, what others do that make them great, and modern trends, I need to add my own my personal touch. This is why I devised a moodboard.</p>
+        <img src="moodboard.png" style="width: 60vw; margin-top: 3vw;">
+    </section>
+
+    <img src="../ideateline.png" class="methodline">
+
+
+    <section id="flowchart">
+        <h2 class="thetitle">Flowchart</h2>
+        <p>After knowing all the research above, it's time to illustrate the structure of my website. I modeled it like Bruno’s layout because I want to ensure simplicity to users. </p>
+        <img src="flowchart.png">
+    </section>
+
+    <img src="../prototypeline.png" class="methodline">
+
+
+    <section id="wireframe">
+        <h2 class="thetitle">Wireframe</h2>
+        <p>Now that I know the flow of my website, I will give more details and visualise the basic layout of my website. This is the wireframe I came up with.</p>
+        <img src="wireframe.png" style="width: 20vw;">
+    </section>
+
+    <section id="prototype">
+        <h2 class="thetitle">Prototyping</h2>
+        <p>Combining all the results I got, it's time to make a prototype in Figma. This is my final proposed design (you can compare it to the main page :D)</p>
+        <iframe style="border: 1px solid #f0f0f0; width: 80vw;" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FzAlZQ5nLF5WYnxJCJIIb3B%2FUntitled%3Ftype%3Ddesign%26node-id%3D10-63%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D10%253A63" allowfullscreen></iframe>
+    </section>
+
+    <img src="../testingline.png" class="methodline">
+
+
+    <section id="usabilitytesting">
+        <h2 class="thetitle">Usability testing</h2>
+        <p>I did a usability testing by literally showing this portfolio website to 5 random people. I asked them to do some tests, and ask them some questions.</p>
+        <p>Here are the results.</p>
+        <img src="../bluestar.png" class="bluestar"><p class="pointers">I tasked them to find the contents of my FlyGaruda project. The average duration was 3.2s, with 100% completion rate.</p>
+        <br>
+        <img src="../bluestar.png" class="bluestar"><p class="pointers">I tasked them to find my skills section. Average duration taken was 1.8s and 100% completion rate.</p>
+        <br>
+        <img src="../bluestar.png" class="bluestar"><p class="pointers">I tasked them to find the contact me footbar. Average duration taken was 2.3s and 100% completion rate.</p>
+        <br>
+
+        <p style="margin-top: 3vw;">After this, I asked them some questions. These questions help me if my research and design is able to answer the research question.</p>
+        <img src="../bluestar.png" class="bluestar"><p class="pointers">"Do you feel like my design is trendy or not?" 4 people said it's trendy, 1 said it's alright.</p>
+        <br>
+        <img src="../bluestar.png" class="bluestar"><p class="pointers">"Does my website look trendy to you?" Everyone said that it looks unique.</p>
+        <br>
+        <img src="../bluestar.png" class="bluestar"><p class="pointers">"Are the information and layout of the website clear to you?" 4 out of 5 stated that the layout and information are very clear. One said it's just clear enough.</p>
+        <br>
+
+        <p style="margin-top: 3vw;">I then asked some feedbacks to the testers if they have any.</p>
+        <img src="../bluestar.png" class="bluestar"><p class="pointers">One tester commented that at first they were confused with my website; they thought that their laptop actually crashed and refreshed the website 3 times because of my BSOD parody. But then they realised that it’s just a joke, after seeing the ;) emoji.
+        </p>
+        <br>
+        <img src="../bluestar.png" class="bluestar"><p class="pointers">They liked how I can combine neobrutalism and the minimalism theme on the projects section.</p>
+        <br>
+
+    </section>
+
+    <section>
+        <h2 class="thetitle">Conclusion</h2>
+        <p>Based on the research, design, and testing above, I was able to create a portfolio website that is unique & to my liking, while effectively showing my work, skills, and myself, while having a great user experience. The testing has produced positive results and therefore, I have answered my research question. Thank you for reading!</p>
+    </section>
+
+
+
+   
+
+</body>
+</html>
